@@ -1,2 +1,2 @@
 a navigation by php  
-project address [http://meiphp.sinaapp.com/](http://meiphp.sinaapp.com/)
+project demo [meiphp.sinaapp.com](http://meiphp.sinaapp.com/)
