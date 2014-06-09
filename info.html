@@ -1,0 +1,331 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>info</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: d5e7ce436666e7d4a2eeb12e7f8261dacceb3565 */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+.markdown-body img {
+  max-width: 100%
+}
+</style>
+
+</head>
+<body>
+<h2>个人简历</h2>
+<h3>个人资料</h3>
+<ul>
+<li>姓    名：李天美</li>
+<li>工作年限：1年</li>
+<li>性    别：男						    </li>
+<li>学    历：本科(河南理工大学)</li>
+<li>出生日期：1990-05-04				    </li>
+<li>移动电话：18611863002</li>
+<li>电子邮箱：<a href="&#x6d;&#97;&#105;&#108;&#116;&#111;&#x3a;&#101;&#109;&#x6f;&#109;&#101;&#105;l&#100;&#64;&#103;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#111;&#109;">&#101;&#109;&#111;&#x6d;&#x65;&#105;&#x6c;d&#64;&#103;&#x6d;&#x61;&#105;&#108;&#x2e;&#99;&#111;&#109;</a></li>
+<li>个人博客：<a href="http://meigesir.iteye.com">http://meigesir.iteye.com</a></li>
+<li>居住地址：杭州-滨江      </li>
+</ul>
+<h3>自我评价</h3>
+<p>责任心强，热爱团队开发，热爱互联网行业，对互联网开发充满浓厚兴趣，平时多关注互联网行业内的活动，参加过36氪举办的开发者活动。
+职业理想：成为优秀的软件工程师，并且希望未来能够成为架构师。</p>
+<h3>技术专长</h3>
+<ol>
+<li>熟悉HTML、CSS、JavaScript、XML和Ajax前端页面开发技术及JQuery框架、bootstrap框架</li>
+<li>熟悉MySQL数据库，了解Oracle</li>
+<li>熟悉J2EE技术体系(JSP、Servlet、JDBC)及Spring、Struts、Hibernate、Mybatis、Apache Shiro框架，了解Android,PHP,Linux</li>
+<li>掌握Tomcat的开发和部署技术及MyEclipse、IntelliJ IDEA开发工具；熟悉版本管理工具(svn、git)</li>
+</ol>
+<h3>求职意向</h3>
+<pre><code>Java软件工程师
+</code></pre>
+
+<h3>工作经验</h3>
+<pre><code>2012/07~至今： 北京国科恒通有限公司  电网GP研发部|软件工程师
+</code></pre>
+
+<p>工作描述：按照项目经理的设计文档,利用框架进行编码实现, 模块实现，并独立测试。</p>
+<h3>项目经验</h3>
+<h4>2012/03-2012/05 健康生活馆后台录入系统</h4>
+<p><strong>软件环境</strong>：Windows 7<br />
+<strong>开发工具</strong>：MyEclipse + MySQL+Tomcat<br />
+<strong>使用技术</strong>：Servlet<br />
+<strong>项目描述</strong>：MVC架构模式。刚开始对这些特产店录入销售数据很感兴趣，所以就考虑开发一个销售记录后台录入系统。项目分为销售记录模块、导游模块和用户模块。销售记录模块包括添加记录、搜索记录、导入Excel报表和导出Excel报表功能。搜索记录功能是自定义搜索，可以按时间区间、单位等查询。权限分为管理员权限和职员权限。职员只具有添加销售记录的权限，管理员具有所有权限。<br />
+<strong>责任描述</strong>：负责所有模块的设计开发及数据库的设计</p>
+<h4>2012/07-2012/10	项目管理系统</h4>
+<p><strong>软件环境</strong>：Windows 7<br />
+<strong>开发工具</strong>：IntelliJ IDEA + MySQL + Tomcat<br />
+<strong>使用技术</strong>：SpringMVC + Hibernate + Spring + Apache Shiro  <br />
+<strong>项目描述</strong>：MVC架构模式。随着互联网web项目开发的流行，项目开发过程又很繁琐，所以开发了这个项目。此项目核心就是通过将项目细分，监控每个部分的进度，来简化web项目开发流程。此项目分为用户和项目两个模块。用户模块主要包括用户注册(激活)、用户登录、用户设置(找回密码)、通知功能和权限功能。通知功能用于提示用户评论和@信息。权限功能分为项目管理员、项目负责人、任务负责人和普通用户。项目模块包括项目管理、最新动态、目标模块、资料模块、文件模块、联系人模块和想法模块。目标模块是核心模块，是将项目细分为不同的目标，目标又可细分为不同的任务，可以通过监控任务的进度从而管理和监控目标、项目的开发进度。其它模块是辅助模块，最新动态用于用户发表信息(附带@功能)。<br />
+<strong>责任描述</strong>：负责MVC框架的搭建，数据库的联合设计，用户模块的开发和最新动态的开发。  </p>
+<h3>2013/03-2013/06	教学系统</h3>
+<p><strong>软件环境</strong>：Windows 7<br />
+<strong>开发工具</strong>：IntelliJ IDEA + MySQL + Tomcat<br />
+<strong>使用技术</strong>：SpringMVC + ibatis + Spring + Apache Shiro<br />
+<strong>项目描述</strong>：MVC架构模式。当时一直想开发一个关于教学的项目。此项目分为用户和班级模块。权限功能分为教师和学员。用户模块包括一些常见的个人设置。班级模块分为班级管理和信息流模块、课程模块、文件共享、学员信息、财务模块、个人设置。其中班级管理、学员信息、财务模块对学员不可见。学员登录系统即可直接接入所在班级。课程模块是本项目的核心，可以添加课程以及具体的章节，可以开启课程和管理ppt。学员只有查看开启的课程及章节以及下载ppt的权限，学员也可以对章节发表自己的一些想法和建议。学员信息模块可以用来管理学员的信息。财务模块可以管理学员的缴费情况。<br />
+<strong>责任描述</strong>：负责MVC框架的搭建，数据库的联合设计、班级管理、信息流模块和课程模块。</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
